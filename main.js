@@ -35,3 +35,12 @@ const estudiantes = [
   },
   { nombre: "Gabriela Soto", edad: 22, pais: "Paraguay", notas: [99, 97, 100] },
 ];
+
+function obtenerProm(arrayObjetos) {
+  let sum = 0;
+  arrayObjetos.forEach((element) => {
+    sum += element.precio;
+  });
+
+  return sum / arrayObjetos.length;
+}
