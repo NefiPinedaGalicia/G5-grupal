@@ -54,3 +54,9 @@ function filtrarPorPromedioBajo(arrayObjetos) {
 
 const estudiantesConPromedioBajo = filtrarPorPromedioBajo(estudiantes);
 console.log(estudiantesConPromedioBajo);
+
+function mostrarPais(arrayEstudiantes){
+     array
+
+}
+
