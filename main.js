@@ -34,4 +34,20 @@ const estudiantes = [
     notas: [65, 60, 68],
   },
   { nombre: "Gabriela Soto", edad: 22, pais: "Paraguay", notas: [99, 97, 100] },
+
 ];
+
+const tbody = document.querySelector("#tablaEstudiantes tbody");
+
+estudiantes.forEach((estudiante) => {
+  const fila = document.createElement("tr");
+
+  fila.innerHTML = `
+    <td>${estudiante.nombre}</td>
+    <td>${estudiante.edad}</td>
+    <td>${estudiante.pais}</td>
+    <td>${estudiante.notas.join(", ")}</td>
+  `;
+
+  tbody.appendChild(fila);
+});
