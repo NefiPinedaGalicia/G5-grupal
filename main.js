@@ -38,9 +38,19 @@ const estudiantes = [
 
 function obtenerProm(arrayObjetos) {
   let sum = 0;
-  arrayObjetos.forEach((element) => {
-    sum += element.precio;
+  arrayObjetos.forEach((nota) => {
+    sum += nota;
   });
 
   return sum / arrayObjetos.length;
 }
+
+function filtrarPorPromedioBajo(arrayObjetos) {
+  return arrayObjetos.filter((elemento) => {
+    const promedio = obtenerProm(elemento.notas);
+    return promedio < 51;
+  });
+}
+
+const estudiantesConPromedioBajo = filtrarPorPromedioBajo(estudiantes);
+console.log(estudiantesConPromedioBajo);
