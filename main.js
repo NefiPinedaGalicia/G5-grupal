@@ -44,3 +44,8 @@ function obtenerProm(arrayObjetos) {
 
   return sum / arrayObjetos.length;
 }
+
+function mostrarPais(arrayEstudiantes){
+     array
+
+}
